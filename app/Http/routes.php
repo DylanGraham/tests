@@ -14,5 +14,6 @@
 Route::get('/', 'PageController@index');
 Route::get('/samples', 'SamplesController@index');
 Route::get('/samples/create', 'SamplesController@create');
+Route::post('/samples', 'SamplesController@store');
 Route::get('/batches', 'BatchesController@index');
 Route::get('/batches/create', 'BatchesController@create');
