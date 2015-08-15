@@ -7,6 +7,8 @@ class RealTest extends TestCase
         $this->visit('/')
             ->see('SeqTrack')
             ->click('Enter samples')
-            ->seePageIs('/samples');
+            ->seePageIs('/samples')
+            ->see('Enter samples');
+
     }
 }

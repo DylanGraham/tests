@@ -12,4 +12,5 @@
 */
 
 Route::get('/', 'PageController@index');
+Route::get('/samples', 'PageController@samples');
 Route::get('/posts', 'PostsController@index');
