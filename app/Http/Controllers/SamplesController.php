@@ -7,10 +7,14 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-class PostsController extends Controller
+class SamplesController extends Controller
 {
     public function index()
     {
-        return view('posts');
+        return view('samples');
+    }
+    public function create()
+    {
+        return view('samples.create');
     }
 }
