@@ -3,7 +3,13 @@
     <h1>SeqTrack - Samples</h1>
     <hr/>    
     <table class="table table-striped">
-    <thead><tr>
+    <thead>
+        <tr>
+            <th>BASC Project</th>
+            <th>Sample name</th>
+            <th>i7 index</th>
+            <th>i5 index</th>
+        </tr>
     </thead>
     @foreach ($samples as $s)
     <tr>
