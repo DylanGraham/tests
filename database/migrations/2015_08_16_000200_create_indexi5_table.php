@@ -14,8 +14,8 @@ class CreateIndexi5Table extends Migration
     {
         Schema::create('indexi5', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('index')->unique();
-            $table->text('sequence')->unique();
+            $table->string('index')->unique();
+            $table->string('sequence')->unique();
             $table->timestamps();
         });
     }

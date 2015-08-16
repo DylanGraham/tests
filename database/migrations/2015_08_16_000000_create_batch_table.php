@@ -14,9 +14,9 @@ class CreateBatchTable extends Migration
     {
         Schema::create('batch', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('batch');
-            $table->text('user_id');
-            $table->text('charge_code');
+            $table->string('batch');
+            $table->string('user_id');
+            $table->string('charge_code');
             $table->float('concentration');
             $table->float('volume');
             $table->integer('tube_barcode');

@@ -14,8 +14,8 @@ class CreateIndexi7Table extends Migration
     {
         Schema::create('indexi7', function (Blueprint $table) {
             $table->increments('id');
-            $table->text('index')->unique();
-            $table->text('sequence')->unique();
+            $table->string('index')->unique();
+            $table->string('sequence')->unique();
             $table->timestamps();
         });
     }
