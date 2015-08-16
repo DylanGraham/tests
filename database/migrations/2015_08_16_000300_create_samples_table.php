@@ -16,7 +16,7 @@ class CreateSamplesTable extends Migration
             $table->increments('id');
             $table->integer('batch_id')->nullable();
             $table->foreign('batch_id')->references('id')->on('batch');
-            $table->string('basc-project');
+            $table->string('basc_project');
             $table->string('name')->unique();
             $table->integer('i7_id');
             $table->foreign('i7_id')->references('id')->on('indexi7');
