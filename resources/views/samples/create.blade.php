@@ -1,6 +1,6 @@
 @extends('app')
 @section('content')
-    <h1>SeqTrack - Enter samples</h1>
+    <h1><a href='/'>SeqTrack</a> - Enter samples</h1>
     <hr/>
 
     {!! Form::open(['url'=>'samples', 'class'=>'form-inline']) !!}
