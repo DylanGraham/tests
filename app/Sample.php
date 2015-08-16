@@ -12,4 +12,5 @@ class Sample extends Model
         'i7_id',
         'i5_id',
     ];
+
 }
