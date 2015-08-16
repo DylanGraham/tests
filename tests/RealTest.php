@@ -25,10 +25,10 @@ class RealTest extends TestCase
     public function test_samples_page_form()
     {
         $this->visit('/samples/create')
-            ->type('PASTURE', 'basc-project')
+            ->type('PASTURE', 'basc_project')
             ->type('AF0TJ_Cs-WW-419124R-20150109-well-D1', 'name')
-            ->type('ATTACTCG', 'i7')
-            ->type('GGCTCTGA', 'i5')
+            ->type('ATTACTCG', 'i7_id')
+            ->type('GGCTCTGA', 'i5_id')
             ->press('submit')
             ->seePageIs('/samples');
     }
